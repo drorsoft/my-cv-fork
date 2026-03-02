@@ -37,7 +37,7 @@ describe("Header component", () => {
       root.render(<Header name="Jane" title="Developer" />);
     });
     const img = container.querySelector("img");
-    expect(img?.getAttribute("src")).toBe("/default-avatar.svg");
+    expect(img?.getAttribute("src")).toBe("/placeholder-avatar.svg");
     expect(img?.getAttribute("alt")).toBe("Jane");
     act(() => {
       root.unmount();
